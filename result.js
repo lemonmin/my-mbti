@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const resultElement = document.getElementById('result');
   const restartButton = document.getElementById('restart-button');
+  const bestMatchElement = document.getElementById("best-match");
+  const worstMatchElement = document.getElementById("worst-match");
 
   // 로컬스토리지에서 mbti_result 값 가져오기
   const mbtiResult = localStorage.getItem('mbti_result');
