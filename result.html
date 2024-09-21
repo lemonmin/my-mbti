@@ -28,6 +28,19 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center mb-5">당신의 MBTI는...</h1>
         <h2 class="text-primary mb-5" id="result"></h2>
+
+        <!-- 궁합이 잘 맞는 MBTI 및 잘 맞지 않는 MBTI 표시 -->
+        <div class="d-flex justify-content-between w-100 mb-4">
+            <div class="text-center">
+                <h4>잘 맞는 유형은</h4>
+                <p id="best-match" class="text-success"></p>
+            </div>
+            <div class="text-center">
+                <h4>잘 맞지 않는 유형은</h4>
+                <p id="worst-match" class="text-danger"></p>
+            </div>
+        </div>
+        
         <button type="button" class="btn btn-primary mb-5" onclick="window.location.href='./index.html'"
             id="restart-button">
             다시하기
